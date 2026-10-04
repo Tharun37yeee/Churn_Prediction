@@ -1,5 +1,6 @@
 import React from 'react'
 import { Settings as SettingsIcon, Info } from 'lucide-react'
+import { API_URL } from '../api'
 
 function ReadonlyField({ label, value }) {
   return (
@@ -51,7 +52,7 @@ export default function Settings() {
         <div className="space-y-4">
           <ReadonlyField label="Application" value="Predictive CRM" />
           <ReadonlyField label="Version" value="0.1.0" />
-          <ReadonlyField label="API URL" value="http://localhost:8000" />
+          <ReadonlyField label="API URL" value={API_URL} />
           <ReadonlyField label="Environment" value="Development" />
         </div>
       </div>
