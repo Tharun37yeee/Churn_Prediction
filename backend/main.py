@@ -41,7 +41,7 @@ from schemas import (  # noqa: E402
 # Resolved model paths (relative to backend parent directory)
 # ---------------------------------------------------------------------------
 _BACKEND_DIR = Path(__file__).resolve().parent
-_MODEL_DIR = _BACKEND_DIR.parent  # workspace root
+_MODEL_DIR = _BACKEND_DIR if (_BACKEND_DIR / "churn_pipeline_metadata.joblib").exists() else _BACKEND_DIR.parent
 
 METADATA_PATH = str(_MODEL_DIR / "churn_pipeline_metadata.joblib")
 LGB_PATH = str(_MODEL_DIR / "lgbm_churn_model.txt")
