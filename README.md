@@ -7,6 +7,7 @@
 [![Machine Learning](https://img.shields.io/badge/ML%20Ensemble-LightGBM%20%2B%20CatBoost-blue?style=flat-square)](https://lightgbm.readthedocs.io/)
 
 **Predictive CRM** is an end-to-end full-stack web application designed for subscription and telecommunications businesses to predict, monitor, and mitigate customer churn. The platform combines a **LightGBM + CatBoost ensemble model**, a high-performance **FastAPI** backend, a modern **React + Vite** dashboard with **Recharts**, and a serverless **Neon PostgreSQL** database.
+Demo : https://churnprediction-97jzkihzv-tha11.vercel.app/
 
 ---
 
